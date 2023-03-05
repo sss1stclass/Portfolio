@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.scss'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import { images } from '../../constant'
 
 const abouts = [
@@ -10,7 +10,7 @@ const abouts = [
     imgURL:images.about01
   },
   {
-    title:"sohil maurya",
+    title:"Backend Developer",
     description:'now meet with the web developer',
     imgURL:images.about02
   },
