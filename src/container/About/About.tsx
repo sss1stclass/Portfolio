@@ -15,7 +15,7 @@ const abouts = [
     imgURL:images.about02
   },
   {
-    title:"sohil maurya",
+    title:"Competitve Programming",
     description:'now meet with the web developer',
     imgURL:images.about03
   },
