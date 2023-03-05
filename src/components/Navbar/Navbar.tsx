@@ -6,7 +6,7 @@ import './Navbar.scss'
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
-    const Types = ['Home', 'About', 'Works', 'Skills', 'Contact'];
+    const Types = ['home', 'about', 'work', 'skills', 'testimonial', 'contact'];
 
     return (
         <nav className='app__navbar'>
