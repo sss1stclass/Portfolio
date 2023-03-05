@@ -16,7 +16,7 @@ const abouts = [
   },
   {
     title:"Competitve Programming",
-    description:'now meet with the web developer',
+    description:'We also do competitive programming here',
     imgURL:images.about03
   },
 
