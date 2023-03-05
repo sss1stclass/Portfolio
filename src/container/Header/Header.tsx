@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.scss'
 import { motion } from 'framer-motion'
 import { images } from '../../constant'
+import AppWrap from '../../wrapper/AppWrap'
 
  
 const scaleVariants ={
@@ -15,60 +16,6 @@ const scaleVariants ={
   },
 }
 
-// const Header = () => {
-
-//   return (
-//     <div id='' className='app__header app__flex'>
-//       <motion.div
-//         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-//         transition={{ duration: 2 }}
-//         className='app__header-info'
-//       >
-//         <div className="app_header-badge">
-//           <div className="badge-cmp app__flex">
-//             <span>👋</span>
-//             <div style={{ marginLeft: 20 }}>
-//               <p className='p-text'>Hello, I am</p>
-//               <h1 className='head-text'>Sohil Maurya</h1>
-//             </div>
-//           </div>
-//           <div className="tag-cmp app__flex"> 
-//             <p className='p-text'>web devloper</p>
-//             <p className='p-text'>software developer</p>
-//           </div>
-//         </div>
-
-//       </motion.div>
-
-//       <motion.div
-//        whileInView={{opacity:[0,1]}}
-//        transition={{ duration:0.5,delayChildren:0.5}}
-//       >
-//         <img src={images.profile} alt="profile_image" />
-//         <motion.img
-//         whileInView={{scale:[0,1]}}
-//         transition={{duration:1,ease:'easeInOut'}}
-//         alt='profile background circle'
-//         src={images.circle}
-//         className='overlay_circle'
-//         />
-//       </motion.div>
-
-      
-//       <motion.div
-//       variants={scaleVarients}
-//       whileInView={scaleVarients.whileInView}
-//       className='app_header-circle'
-//       >
-//       {[images.node, images.react, images.sass].map((circle, index) => (
-//         <div className="circle-cmp app__flex" key={`circle-${index}`}>
-//           <img src={circle} alt="profile_bg" />
-//         </div>
-//       ))}
-//       </motion.div>
-//     </div>
-//   )
-// }
 
 const Header = () => (
   <div className="app__header app__flex">
@@ -122,4 +69,4 @@ const Header = () => (
   </div>
 );
 
-export default Header
+export default AppWrap(Header,'home','');
